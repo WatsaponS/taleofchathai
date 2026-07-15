@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "rock",
+  "slug": "crystal-cavern",
+  "concept": "earth-tone crystal cavern with bridges, mine paths and geode chambers",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

@@ -1,0 +1,186 @@
+{
+  "image": "trainers-battle-sheet.png",
+  "count": 30,
+  "frames": {
+    "trail-scout": {
+      "x": 30,
+      "y": 49,
+      "w": 260,
+      "h": 394
+    },
+    "bug-researcher": {
+      "x": 347,
+      "y": 39,
+      "w": 266,
+      "h": 414
+    },
+    "martial-student": {
+      "x": 673,
+      "y": 53,
+      "w": 254,
+      "h": 385
+    },
+    "flower-gardener": {
+      "x": 994,
+      "y": 55,
+      "w": 252,
+      "h": 382
+    },
+    "harbor-fisher": {
+      "x": 1312,
+      "y": 52,
+      "w": 255,
+      "h": 387
+    },
+    "young-inventor": {
+      "x": 35,
+      "y": 530,
+      "w": 249,
+      "h": 415
+    },
+    "mountain-hiker": {
+      "x": 351,
+      "y": 526,
+      "w": 258,
+      "h": 424
+    },
+    "street-dancer": {
+      "x": 656,
+      "y": 536,
+      "w": 288,
+      "h": 403
+    },
+    "school-prefect": {
+      "x": 1005,
+      "y": 531,
+      "w": 229,
+      "h": 414
+    },
+    "cafe-courier": {
+      "x": 1326,
+      "y": 525,
+      "w": 228,
+      "h": 426
+    },
+    "ruin-archaeologist": {
+      "x": 23,
+      "y": 1046,
+      "w": 273,
+      "h": 368
+    },
+    "ghost-storyteller": {
+      "x": 331,
+      "y": 1045,
+      "w": 298,
+      "h": 370
+    },
+    "snow-ranger": {
+      "x": 651,
+      "y": 1048,
+      "w": 298,
+      "h": 364
+    },
+    "fire-smith": {
+      "x": 979,
+      "y": 1042,
+      "w": 282,
+      "h": 375
+    },
+    "electric-technician": {
+      "x": 1289,
+      "y": 1046,
+      "w": 302,
+      "h": 368
+    },
+    "desert-nomad": {
+      "x": 18,
+      "y": 1529,
+      "w": 284,
+      "h": 386
+    },
+    "forest-herbalist": {
+      "x": 331,
+      "y": 1535,
+      "w": 298,
+      "h": 373
+    },
+    "punk-drummer": {
+      "x": 660,
+      "y": 1528,
+      "w": 279,
+      "h": 387
+    },
+    "bird-keeper": {
+      "x": 968,
+      "y": 1529,
+      "w": 303,
+      "h": 386
+    },
+    "canal-sailor": {
+      "x": 1298,
+      "y": 1534,
+      "w": 283,
+      "h": 376
+    },
+    "psychic-magician": {
+      "x": 0,
+      "y": 2002,
+      "w": 320,
+      "h": 423
+    },
+    "quarry-foreman": {
+      "x": 348,
+      "y": 1968,
+      "w": 263,
+      "h": 492
+    },
+    "poison-alchemist": {
+      "x": 642,
+      "y": 1999,
+      "w": 316,
+      "h": 429
+    },
+    "steel-officer": {
+      "x": 991,
+      "y": 2005,
+      "w": 258,
+      "h": 418
+    },
+    "dragon-guardian": {
+      "x": 1283,
+      "y": 1993,
+      "w": 314,
+      "h": 441
+    },
+    "fairy-performer": {
+      "x": 0,
+      "y": 2486,
+      "w": 319,
+      "h": 439
+    },
+    "veteran-champion": {
+      "x": 346,
+      "y": 2481,
+      "w": 268,
+      "h": 449
+    },
+    "elder-naturalist": {
+      "x": 659,
+      "y": 2489,
+      "w": 282,
+      "h": 434
+    },
+    "night-courier": {
+      "x": 972,
+      "y": 2485,
+      "w": 296,
+      "h": 442
+    },
+    "traveling-chef": {
+      "x": 1281,
+      "y": 2483,
+      "w": 318,
+      "h": 446
+    }
+  }
+}

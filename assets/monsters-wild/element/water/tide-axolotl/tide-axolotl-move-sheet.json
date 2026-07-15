@@ -1,0 +1,63 @@
+{
+  "image": "tide-axolotl-move-sheet.png",
+  "frameWidth": 380,
+  "frameHeight": 255,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 380,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 760,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1140,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1520,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1900,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2280,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2660,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

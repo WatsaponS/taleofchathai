@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "grass",
+  "slug": "verdant-canopy",
+  "concept": "lush jungle canopy with vine bridges, ruins and giant leaves",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

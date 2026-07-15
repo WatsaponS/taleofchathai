@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "ground",
+  "slug": "terracotta-badlands",
+  "concept": "red clay badlands village with mesas, dry river and tunnels",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

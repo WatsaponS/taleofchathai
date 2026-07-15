@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "dark",
+  "slug": "eclipse-alley",
+  "concept": "noir moonlit city alleys with rooftops, lanterns and hidden courtyards",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

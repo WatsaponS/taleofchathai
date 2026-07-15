@@ -1,0 +1,63 @@
+{
+  "image": "frost-penguin-move-sheet.png",
+  "frameWidth": 266,
+  "frameHeight": 293,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 266,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 532,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 798,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1064,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1330,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1596,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 1862,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

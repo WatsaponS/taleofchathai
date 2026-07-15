@@ -1,0 +1,21 @@
+# Android build project — not needed for the web/GitHub Pages deploy, and its dist/ APK
+# (500MB+) is far past what a git repo should hold.
+android/
+
+# Unused legacy/QA asset folders left over from the asset-sourcing pipeline — nothing in js/
+# references these, confirmed via grep before excluding.
+assets/monsters-legacy-chathaithecat/
+assets/monsters-legacy-pixel/
+assets/monsters-original-100/
+assets/qa-report/
+assets/repair-qa/
+
+# High-res source art used only during generation, not referenced by any runtime code (confirmed
+# via grep) — the *-move-sheet.png / *-move.gif / plain .png next to them are what the game loads.
+assets/**/*-source.png
+
+# Editor/OS/local scratch
+.DS_Store
+Thumbs.db
+test_*.html
+assets/*/*-source.png

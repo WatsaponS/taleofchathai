@@ -1,0 +1,63 @@
+{
+  "image": "plug-mouse-move-sheet.png",
+  "frameWidth": 331,
+  "frameHeight": 229,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 331,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 662,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 993,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1324,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1655,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1986,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2317,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

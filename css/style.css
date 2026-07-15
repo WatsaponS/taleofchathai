@@ -1,0 +1,430 @@
+/* TaleofChaThai — pixel-art-first styling (adapted from ChaThaiTheCat's proven layout). */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1d2b3a, #0b1220 70%);
+  color: #eef4ff;
+  font-family: 'Segoe UI', 'Baloo 2', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+#app { width: 100%; max-width: 780px; }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #3f6fb5;
+  color: #fff;
+  font-size: 14px;
+  transition: transform .08s ease-out, background .15s, box-shadow .08s ease-out, filter .08s;
+  box-shadow: 0 3px 0 rgba(0,0,0,.4), 0 4px 6px rgba(0,0,0,.25);
+}
+button:hover:not(:disabled) { background: #5688cc; transform: translateY(-1px); }
+button:active:not(:disabled) {
+  transform: translateY(3px) scale(.97);
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  filter: brightness(.92);
+  transition: transform .04s, box-shadow .04s, filter .04s;
+}
+button:disabled { opacity: .4; cursor: not-allowed; }
+button.big { padding: 12px 22px; font-size: 16px; display: block; margin: 10px auto; }
+
+#topbar {
+  background: rgba(255,255,255,.05);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+#topbar .title { font-size: 19px; font-weight: 700; }
+#topbar .stats { font-size: 13px; opacity: .85; margin: 4px 0 8px; }
+#topbar .nav { display: flex; gap: 6px; flex-wrap: wrap; }
+#topbar .nav button { font-size: 12px; padding: 6px 9px; }
+
+.screen { background: rgba(255,255,255,.04); border-radius: 14px; padding: 16px; animation: screenFadeIn .18s ease-out; }
+@keyframes screenFadeIn { 0% { opacity: 0; transform: translateY(6px); } 100% { opacity: 1; transform: translateY(0); } }
+.hint { font-size: 13px; opacity: .75; }
+.section-title { margin: 18px 0 6px; }
+.log-box { background: rgba(0,0,0,.35); border-radius: 8px; padding: 8px 12px; font-size: 13px; margin-top: 12px; min-height: 20px; }
+
+/* ---- Start ---- */
+.start-screen { text-align: center; }
+.subtitle { opacity: .8; }
+.trainer-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.trainer-choice {
+  width: 130px; background: rgba(255,255,255,.06); border-radius: 12px; padding: 10px; cursor: pointer;
+  transition: transform .15s, background .15s;
+}
+.trainer-choice:hover { transform: scale(1.05); background: rgba(255,255,255,.12); }
+.trainer-full-img { width: 100%; height: 130px; object-fit: contain; }
+.trainer-name { font-weight: 700; margin-top: 6px; }
+.trainer-blurb { font-size: 11px; opacity: .75; }
+.starter-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 14px 0; }
+.starter-choice {
+  width: 150px; background: rgba(255,255,255,.06); border-radius: 12px; padding: 12px; cursor: pointer;
+  transition: transform .15s;
+}
+.starter-choice:hover { transform: scale(1.06); background: rgba(255,255,255,.12); }
+
+/* ---- Monster sprites (pixel art — keep crisp) ---- */
+.mon-img { image-rendering: pixelated; }
+.mon-sprite { width: 72px; height: 72px; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+.mon-sprite .mon-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.mon-sprite.big { width: 140px; height: 140px; margin: 0 auto; font-size: 80px; }
+
+/* ---- Region Map (world map + pins) ---- */
+.regionmap-screen { text-align: center; }
+.worldmap-wrap { position: relative; max-width: 720px; margin: 0 auto; }
+.worldmap-img { width: 100%; display: block; border-radius: 12px; image-rendering: pixelated; }
+.region-pin { position: absolute; transform: translate(-50%, -50%); cursor: default; }
+.region-pin .pin-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #ffd666; border: 2px solid #fff;
+  box-shadow: 0 0 8px rgba(255,214,102,.9);
+  margin: 0 auto;
+}
+.region-pin .pin-label {
+  font-size: 10px; font-weight: 700; color: #fff;
+  text-shadow: 0 1px 3px #000, 0 0 6px #000;
+  margin-top: 2px; white-space: nowrap;
+}
+.pin-reachable { cursor: pointer; }
+.pin-reachable .pin-dot { background: #7bffb2; animation: pinPulse 1.4s ease-in-out infinite; }
+.pin-visited { cursor: pointer; }
+.pin-visited .pin-dot { background: #6fb5ff; }
+.pin-locked .pin-dot { background: #777; box-shadow: none; }
+.pin-unbuilt .pin-dot { background: #444; border-color: #888; box-shadow: none; }
+.pin-unbuilt .pin-label, .pin-locked .pin-label { opacity: .65; }
+.pin-here-marker { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); font-size: 18px; animation: bobY 1s ease-in-out infinite; filter: drop-shadow(0 0 4px #000); }
+@keyframes pinPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.35); } }
+@keyframes bobY { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-4px); } }
+.regionmap-hint { font-size: 12px; opacity: .75; margin: 8px 0 4px; }
+.route-bar { font-size: 13px; background: rgba(0,0,0,.3); border-radius: 8px; padding: 6px 10px; display: inline-block; margin-bottom: 10px; }
+.route-step.route-done { color: #7bffb2; font-weight: 700; }
+.scene-actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+
+/* ---- Field (FireRed viewport) ---- */
+.field-screen { text-align: center; }
+.field-zonename { font-weight: 700; margin-bottom: 8px; }
+.field-viewport {
+  position: relative;
+  width: 480px; height: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #2e4664;
+}
+.field-map-layer {
+  position: absolute; left: 0; top: 0;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  transition: transform .14s linear;
+  will-change: transform;
+}
+.field-tile { position: absolute; width: 32px; height: 32px; pointer-events: none; }
+.tile-G { background: rgba(80, 200, 100, .13); box-shadow: inset 0 -4px 0 rgba(30, 120, 50, .18); border-radius: 4px; }
+.tile-C { background: rgba(160, 130, 230, .12); box-shadow: inset 0 -4px 0 rgba(90, 70, 150, .16); border-radius: 4px; }
+.tile-W { background: rgba(70, 140, 240, .16); box-shadow: inset 0 0 8px rgba(20, 60, 140, .3); }
+.tile-warp { display: flex; align-items: center; justify-content: center; font-size: 18px; filter: drop-shadow(0 0 4px #fff); z-index: 3; }
+.field-npc {
+  position: absolute; width: 32px; height: 32px;
+  display: flex; align-items: flex-end; justify-content: center;
+  font-size: 24px; z-index: 4; pointer-events: none;
+  filter: drop-shadow(0 0 3px rgba(255,255,255,.4)) drop-shadow(0 3px 4px rgba(0,0,0,.6));
+}
+.field-npc.npc-defeated { filter: grayscale(.7) drop-shadow(0 3px 4px rgba(0,0,0,.6)); opacity: .85; }
+/* NPC trainers: pixel-art people, bottom-anchored, ~1.75 tiles tall (docs §6.2) */
+.field-trainer-npc {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  height: 56px; width: auto; object-fit: contain; image-rendering: pixelated;
+}
+/* Field bosses: 3-3.5 tiles tall so they read as a real threat (docs §3.7) */
+.field-npc-boss .field-boss-img {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  height: 104px; width: auto; object-fit: contain; image-rendering: pixelated;
+  animation: bossGlow 1.4s ease-in-out infinite;
+}
+@keyframes bossGlow {
+  0%, 100% { filter: drop-shadow(0 0 6px rgba(255,90,60,.65)) drop-shadow(0 3px 4px rgba(0,0,0,.6)); }
+  50% { filter: drop-shadow(0 0 14px rgba(255,90,60,.95)) drop-shadow(0 3px 4px rgba(0,0,0,.6)); }
+}
+.field-npc-dojo .field-trainer-npc { filter: drop-shadow(0 0 6px rgba(255,214,102,.8)); }
+.field-player { position: absolute; width: 32px; height: 32px; transition: left .14s linear, top .14s linear; pointer-events: none; z-index: 5; }
+.field-player-ring {
+  position: absolute; left: 50%; bottom: -3px;
+  width: 26px; height: 10px; transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(255,214,102,.9) 0%, rgba(255,214,102,.4) 55%, transparent 78%);
+  animation: ringPulse 1.6s ease-in-out infinite;
+}
+@keyframes ringPulse { 0%, 100% { transform: translateX(-50%) scale(1); opacity: .9; } 50% { transform: translateX(-50%) scale(1.3); opacity: .45; } }
+.field-player-sprite {
+  position: absolute; left: 50%; bottom: 0;
+  width: 40px; height: 52px; transform: translateX(-50%);
+  object-fit: contain; object-position: bottom;
+  filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #ffd666) drop-shadow(0 4px 6px rgba(0,0,0,.75));
+}
+.field-player-sprite.face-left { transform: translateX(-50%) scaleX(-1); }
+@keyframes exclaimPop {
+  0% { transform: translateX(-50%) scale(.2); opacity: 0; }
+  35% { transform: translateX(-50%) scale(1.4); opacity: 1; }
+  60% { transform: translateX(-50%) scale(1); }
+  100% { transform: translateX(-50%) scale(1); opacity: 1; }
+}
+.field-exclaim {
+  position: absolute; top: -30px; left: 50%; transform: translateX(-50%);
+  font-size: 24px; font-weight: 900; color: #ff5252;
+  text-shadow: 0 0 6px #fff, 0 2px 3px #000;
+  animation: exclaimPop .5s ease-out forwards;
+  z-index: 6;
+}
+@keyframes encounterFlash {
+  0%, 22% { background: #fff; opacity: .95; }
+  11%, 33% { background: #000; opacity: .9; }
+  44% { background: #fff; opacity: .95; }
+  100% { background: #000; opacity: 1; }
+}
+.field-encounter-flash { position: absolute; inset: 0; z-index: 9; animation: encounterFlash .5s steps(1) forwards; }
+.field-viewport.warp-fade::after {
+  content: ''; position: absolute; inset: 0; background: #000; z-index: 8;
+  animation: warpFade .45s ease-in-out forwards;
+}
+@keyframes warpFade { 0% { opacity: 0; } 40% { opacity: 1; } 70% { opacity: 1; } 100% { opacity: 0; } }
+.field-dialogue {
+  position: absolute; left: 8px; right: 8px; bottom: 8px;
+  background: #fff; color: #1a2233;
+  border: 3px solid #3b5cca; border-radius: 10px;
+  padding: 8px 12px; font-size: 13px; text-align: left;
+  cursor: pointer; z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,.45);
+}
+.field-dialogue-name { font-weight: 700; color: #3b5cca; }
+.field-dialogue-hint { text-align: right; animation: bobY2 1s ease-in-out infinite; }
+@keyframes bobY2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3px); } }
+.field-hint { font-size: 12px; opacity: .7; margin: 8px auto; max-width: 480px; }
+.field-controls { display: flex; gap: 20px; align-items: center; justify-content: center; margin-top: 4px; }
+/* Virtual analog stick (replaces the old 4-button D-pad — playtest feedback §1.3/§3.5): a circular
+   base the player drags the nub within; JS reads the drag angle and snaps it to 8 directions. */
+.joystick {
+  position: relative; width: 100px; height: 100px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.12) 0%, rgba(255,255,255,.04) 70%);
+  border: 2px solid rgba(255,255,255,.3);
+  touch-action: none; user-select: none;
+}
+.joystick-nub {
+  position: absolute; top: 50%; left: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px;
+  border-radius: 50%; background: #3b5cca; box-shadow: 0 2px 6px rgba(0,0,0,.5);
+  transition: transform .08s ease-out;
+}
+
+/* ---- Battle ---- */
+.battle-field {
+  position: relative; height: 300px; border-radius: 12px; overflow: hidden;
+  border: 2px solid #2e4664;
+  image-rendering: pixelated;
+}
+/* The battlefield background is the same busy village art used for walking, so a floating sprite
+   would land on a random rooftop/garden bed and look like it wandered in. A dark ground-shadow
+   ellipse right under each monster's feet anchors it to "its own spot" regardless of what's
+   behind it — same trick ChaThaiTheCat's battle screen uses. Sized/offset to match the sprite
+   boxes below exactly, so the shadow sits centered under each monster. */
+.battle-enemy-platform, .battle-player-platform {
+  position: absolute;
+  width: 110px; height: 28px;
+  border-radius: 50%;
+  /* Feathered dark center + a faint light rim so the shadow still reads against backgrounds that
+     are themselves dark (e.g. tilled soil rows) — a flat dark fill alone can vanish there. */
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.6) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,.15) 82%, rgba(0,0,0,0) 100%);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.22);
+}
+.battle-enemy-platform { top: 150px; right: 55px; }
+.battle-player-platform { bottom: 10px; left: 55px; }
+/* Enemy (top-right) and player (bottom-left) mirror each other exactly — same box size, same
+   edge offsets — so the two sides read as a balanced face-off instead of the enemy looking like
+   it lunged forward. */
+.battle-enemy-sprite {
+  position: absolute; top: 24px; right: 40px;
+  width: 140px; height: 140px;
+  display: flex; align-items: flex-end; justify-content: center;
+  /* bobY2 (translateY only) — NOT bobY, which bakes in a translateX(-50%) meant for the
+     region-map pin marker's different centering; reusing it here shoved the sprite 70px
+     sideways away from its shadow the whole time. */
+  animation: bobY2 2.2s ease-in-out infinite;
+}
+.battle-player-sprite {
+  position: absolute; bottom: 24px; left: 40px;
+  width: 140px; height: 140px;
+  display: flex; align-items: flex-end; justify-content: center;
+  animation: bobY2 2.4s ease-in-out infinite; animation-delay: -.6s; /* offset so it's not synced with the enemy's bob */
+}
+.battle-enemy-sprite .mon-img, .battle-player-sprite .mon-img { max-width: 100%; max-height: 100%; object-fit: contain; }
+/* All monster art (docs §3.1) is drawn facing left by default. The enemy (top-right) already
+   faces the player that way — but the player's own monster (bottom-left) would then face AWAY
+   from the enemy, so mirror just that side to make the two face off properly. */
+.battle-player-sprite .mon-img { transform: scaleX(-1); }
+.mon-hud {
+  position: absolute; background: #fbf8ef; color: #24303d;
+  border: 3px solid #3b5cca; border-radius: 10px;
+  padding: 6px 10px; min-width: 150px;
+  box-shadow: 2px 3px 0 rgba(0,0,0,.35);
+}
+.mon-hud-enemy { top: 10px; left: 10px; }
+.mon-hud-player { bottom: 10px; right: 10px; }
+.mon-hud-row { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; font-weight: 700; }
+.mon-hpbar-track { height: 7px; background: #3a3a3a; border-radius: 4px; margin-top: 5px; overflow: hidden; border: 1px solid #222; }
+.mon-hpbar-fill { height: 100%; transition: width .3s; }
+.mon-hp-numbers { text-align: right; font-size: 11px; margin-top: 3px; opacity: .8; }
+.mon-expbar-track { height: 4px; background: #2a2a2a; border-radius: 3px; margin-top: 4px; overflow: hidden; border: 1px solid #1a1a1a; }
+.mon-expbar-fill { height: 100%; background: #4aa3ff; }
+.mon-status-tag { font-size: 10px; color: #b3541e; font-weight: 700; }
+.battle-dialog-area { display: flex; gap: 8px; align-items: stretch; margin-top: 8px; }
+.battle-textbox {
+  flex: 1.5; background: #fff; color: #1a2233;
+  border: 3px solid #3b5cca; border-radius: 10px;
+  padding: 10px 14px; font-size: 13px; min-height: 84px;
+}
+.battle-menu { flex: 1; display: flex; flex-wrap: wrap; gap: 6px; align-content: flex-start; }
+.menu-btn { flex: 1 1 45%; font-size: 12px; padding: 8px 6px; }
+.menu-btn.wide { flex: 1 1 100%; }
+
+/* ---- Move effects (battle beat sequencer — lunge/impact/particles/shake, docs-style FX like
+   ChaThaiTheCat's battle system, built from CSS primitives since no sprite-sheet FX assets exist) ---- */
+@keyframes shakeField {
+  0%, 100% { transform: translateX(0); }
+  15% { transform: translateX(-8px); } 30% { transform: translateX(7px); }
+  45% { transform: translateX(-6px); } 60% { transform: translateX(5px); }
+  75% { transform: translateX(-3px); } 90% { transform: translateX(2px); }
+}
+.battle-field.fx-shake { animation: shakeField .4s ease-in-out; }
+.battle-field.fx-shake-big { animation: shakeField .6s ease-in-out; }
+
+/* Enemy sits top-right, player sits bottom-left — each lunge must move TOWARD the other side
+   (positive x/negative y = up-right; negative x/positive y = down-left), not away from it. */
+@keyframes lungeToEnemy { 45% { transform: translate(30px, -6px) scale(1.05); } }
+@keyframes lungeToPlayer { 45% { transform: translate(-30px, 6px) scale(1.05); } }
+.battle-player-sprite.fx-lunge { animation: lungeToEnemy .35s ease-in-out; }
+.battle-enemy-sprite.fx-lunge { animation: lungeToPlayer .35s ease-in-out; }
+
+@keyframes hitFlash { 0%, 100% { filter: none; } 25%, 55% { filter: brightness(3) saturate(0); } }
+.fx-hitflash { animation: hitFlash .3s ease-in-out; }
+
+@keyframes impactBurst {
+  0% { transform: translate(-50%, -50%) scale(.2); opacity: .95; }
+  60% { transform: translate(-50%, -50%) scale(1.6); opacity: .65; }
+  100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0; }
+}
+.fx-impact {
+  position: absolute; width: 70px; height: 70px; border-radius: 50%;
+  pointer-events: none; z-index: 7; animation: impactBurst .45s ease-out forwards;
+}
+
+@keyframes particleFly {
+  0% { transform: translate(-50%, -50%) translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) translate(var(--fx-tx, 30px), var(--fx-ty, -30px)) scale(.4); opacity: 0; }
+}
+.fx-particle { position: absolute; font-size: 20px; pointer-events: none; z-index: 8; animation: particleFly .55s ease-out forwards; }
+
+@keyframes sparkleRise {
+  0% { transform: translate(-50%, 0) scale(.6); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translate(-50%, -60px) scale(1.1); opacity: 0; }
+}
+.fx-sparkle { position: absolute; font-size: 18px; pointer-events: none; z-index: 8; animation: sparkleRise .8s ease-out forwards; }
+
+@keyframes statusPop {
+  0% { transform: translate(-50%, 10px) scale(.3); opacity: 0; }
+  40% { transform: translate(-50%, -6px) scale(1.2); opacity: 1; }
+  70% { transform: translate(-50%, 0) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -4px) scale(1); opacity: 0; }
+}
+.fx-status-glyph {
+  position: absolute; left: 50%; top: -6px; font-size: 26px; pointer-events: none; z-index: 8;
+  animation: statusPop 1s ease-out forwards;
+}
+
+@keyframes missText {
+  0% { transform: translate(-50%, 6px); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translate(-50%, -22px); opacity: 0; }
+}
+.fx-miss {
+  position: absolute; left: 50%; top: 10px; font-weight: 900; font-size: 15px; color: #cfd8dc;
+  text-shadow: 0 1px 2px #000; pointer-events: none; z-index: 8; animation: missText .7s ease-out forwards;
+}
+
+@keyframes faintDrop { 100% { transform: translateY(60px); opacity: 0; } }
+.battle-enemy-sprite.fx-faint, .battle-player-sprite.fx-faint { animation: faintDrop .5s ease-in forwards; }
+
+/* ---- Cards / dex / evolution / movepool ---- */
+.mon-card { display: flex; gap: 10px; align-items: center; background: rgba(0,0,0,.25); border-radius: 10px; padding: 8px 12px; margin-bottom: 8px; }
+.mon-card-info { flex: 1; }
+.mon-name { font-weight: 700; }
+.mon-lvl { opacity: .8; font-weight: 400; }
+.bar { height: 8px; background: #333; border-radius: 4px; overflow: hidden; margin-top: 4px; }
+.bar-fill { height: 100%; }
+.mon-hp-text { font-size: 11px; opacity: .75; margin-top: 2px; }
+.mon-card-actions { display: flex; gap: 6px; align-items: center; }
+.lead-tag { font-size: 11px; color: #ffd666; font-weight: 700; }
+.dex-filters { display: flex; gap: 4px; flex-wrap: wrap; margin: 10px 0; }
+.chip { font-size: 11px; padding: 4px 9px; border-radius: 99px; background: rgba(255,255,255,.1); box-shadow: none; }
+.chip-on { outline: 2px solid #fff; }
+.dex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+.dex-card { background: rgba(0,0,0,.25); border-radius: 10px; padding: 8px; text-align: center; }
+.dex-card .mon-sprite { margin: 0 auto; }
+.dex-num { font-size: 10px; opacity: .6; }
+.dex-name { font-size: 12px; font-weight: 700; margin: 3px 0; }
+.dex-cat { font-size: 10px; opacity: .65; margin-top: 3px; }
+.evo-lines { display: flex; flex-direction: column; gap: 6px; }
+.evo-line { display: flex; align-items: center; gap: 8px; background: rgba(0,0,0,.2); border-radius: 10px; padding: 6px 10px; flex-wrap: wrap; }
+.evo-stage { text-align: center; }
+.evo-stage .mon-sprite { width: 56px; height: 56px; margin: 0 auto; }
+.evo-name { font-size: 11px; font-weight: 700; }
+.evo-arrow { font-size: 18px; opacity: .8; display: flex; flex-direction: column; align-items: center; }
+.evo-lvl { font-size: 10px; opacity: .7; }
+.moveinfo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.moveinfo-card { background: rgba(0,0,0,.25); border-radius: 10px; padding: 10px; }
+.moveinfo-card-title { font-weight: 700; margin-bottom: 4px; }
+.moveinfo-lines { font-size: 10px; opacity: .7; margin-bottom: 6px; }
+.moveinfo-row { display: flex; gap: 8px; font-size: 12px; padding: 2px 0; }
+.moveinfo-lvl { opacity: .7; width: 38px; }
+.moveinfo-meta { margin-left: auto; opacity: .8; }
+.guide-card { background: rgba(0,0,0,.25); border-radius: 10px; padding: 10px 14px; margin-bottom: 10px; font-size: 13px; }
+.guide-card h3 { margin: 0 0 6px; }
+
+/* ---- Status ---- */
+.status-card { background: #fbf8ef; color: #24303d; border-radius: 12px; overflow: hidden; max-width: 480px; margin: 0 auto 12px; }
+.status-titlebar { background: #3b5cca; color: #fff; display: flex; justify-content: space-between; padding: 8px 14px; font-weight: 700; }
+.status-body { display: flex; padding: 14px; gap: 14px; }
+.status-left { text-align: center; }
+.status-name { font-weight: 700; margin-top: 4px; }
+.status-right { flex: 1; }
+.status-stat-row { display: flex; gap: 8px; align-items: center; justify-content: space-between; padding: 3px 0; font-size: 13px; }
+.status-stat-row .bar { flex: 1; }
+.status-moves { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 0 14px 14px; }
+.status-move { border-radius: 8px; padding: 6px 10px; font-size: 12px; font-weight: 700; color: #fff; }
+.status-move-meta { font-size: 10px; font-weight: 400; opacity: .9; }
+
+/* ---- Congrats ---- */
+.congrats-screen { text-align: center; }
+.congrats-trainer { height: 200px; object-fit: contain; }
+.congrats-party { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+
+/* ---- 18 type colors (standard Pokémon palette) ---- */
+.type-tag { display: inline-block; padding: 2px 10px; border-radius: 99px; font-size: 11px; font-weight: 700; color: #fff; }
+.type-Normal { background: #a8a878; } .type-Fire { background: #f08030; }
+.type-Water { background: #6890f0; } .type-Electric { background: #f8d030; color: #333; }
+.type-Grass { background: #78c850; } .type-Ice { background: #98d8d8; color: #1e4b57; }
+.type-Fighting { background: #c03028; } .type-Poison { background: #a040a0; }
+.type-Ground { background: #e0c068; color: #4d3a09; } .type-Flying { background: #a890f0; }
+.type-Psychic { background: #f85888; } .type-Bug { background: #a8b820; }
+.type-Rock { background: #b8a038; } .type-Ghost { background: #705898; }
+.type-Dragon { background: #7038f8; } .type-Dark { background: #705848; }
+.type-Steel { background: #b8b8d0; color: #33334d; } .type-Fairy { background: #ee99ac; color: #6b1f37; }
+button.type-Electric, button.type-Ice, button.type-Ground, button.type-Steel, button.type-Fairy { color: inherit; }

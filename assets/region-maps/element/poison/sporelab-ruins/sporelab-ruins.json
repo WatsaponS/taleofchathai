@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "poison",
+  "slug": "sporelab-ruins",
+  "concept": "abandoned alchemy greenhouse with poisonous vines, vats and broken rooms",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

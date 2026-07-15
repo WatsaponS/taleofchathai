@@ -1,0 +1,184 @@
+{
+  "image": "chathai-world-map.png",
+  "width": 1402,
+  "height": 1122,
+  "coordinate_system": "normalized x,y from top-left",
+  "starting_region": "normal",
+  "endgame_route": [
+    "normal",
+    "fighting",
+    "psychic",
+    "ice",
+    "dragon"
+  ],
+  "progression_gates": [
+    "dragon-mountain-pass",
+    "steel-city-bridge",
+    "ground-canyon-gate",
+    "water-cascade-temple"
+  ],
+  "regions": [
+    {
+      "id": "flying",
+      "group": "type",
+      "center": [
+        0.12,
+        0.09
+      ],
+      "zone": "northwest-cloud-isles"
+    },
+    {
+      "id": "dragon",
+      "group": "type",
+      "center": [
+        0.27,
+        0.17
+      ],
+      "zone": "northwest-mountains"
+    },
+    {
+      "id": "ice",
+      "group": "element",
+      "center": [
+        0.52,
+        0.12
+      ],
+      "zone": "northern-frostlands"
+    },
+    {
+      "id": "psychic",
+      "group": "type",
+      "center": [
+        0.73,
+        0.18
+      ],
+      "zone": "northeast-observatory"
+    },
+    {
+      "id": "electric",
+      "group": "element",
+      "center": [
+        0.83,
+        0.32
+      ],
+      "zone": "eastern-neon-city"
+    },
+    {
+      "id": "steel",
+      "group": "element",
+      "center": [
+        0.67,
+        0.53
+      ],
+      "zone": "eastern-ironworks"
+    },
+    {
+      "id": "fire",
+      "group": "element",
+      "center": [
+        0.88,
+        0.61
+      ],
+      "zone": "southeast-volcano"
+    },
+    {
+      "id": "ground",
+      "group": "type",
+      "center": [
+        0.75,
+        0.62
+      ],
+      "zone": "southeast-badlands"
+    },
+    {
+      "id": "rock",
+      "group": "element",
+      "center": [
+        0.67,
+        0.72
+      ],
+      "zone": "southern-quarry-gate"
+    },
+    {
+      "id": "poison",
+      "group": "element",
+      "center": [
+        0.52,
+        0.8
+      ],
+      "zone": "southern-miasma-marsh"
+    },
+    {
+      "id": "dark",
+      "group": "element",
+      "center": [
+        0.43,
+        0.72
+      ],
+      "zone": "southwest-umbra-forest"
+    },
+    {
+      "id": "ghost",
+      "group": "type",
+      "center": [
+        0.48,
+        0.61
+      ],
+      "zone": "central-sunken-ruins"
+    },
+    {
+      "id": "water",
+      "group": "element",
+      "center": [
+        0.17,
+        0.71
+      ],
+      "zone": "southwest-lagoon"
+    },
+    {
+      "id": "fairy",
+      "group": "type",
+      "center": [
+        0.2,
+        0.37
+      ],
+      "zone": "western-moonpetal-glen"
+    },
+    {
+      "id": "grass",
+      "group": "element",
+      "center": [
+        0.34,
+        0.52
+      ],
+      "zone": "western-verdant-canopy"
+    },
+    {
+      "id": "bug",
+      "group": "type",
+      "center": [
+        0.39,
+        0.6
+      ],
+      "zone": "silkroot-thicket"
+    },
+    {
+      "id": "normal",
+      "group": "type",
+      "center": [
+        0.49,
+        0.39
+      ],
+      "zone": "central-meadowcross"
+    },
+    {
+      "id": "fighting",
+      "group": "type",
+      "center": [
+        0.55,
+        0.35
+      ],
+      "zone": "central-dojo-heartland"
+    }
+  ]
+}

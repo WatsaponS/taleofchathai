@@ -1,0 +1,63 @@
+{
+  "image": "astral-eye-hierophant-move-sheet.png",
+  "frameWidth": 403,
+  "frameHeight": 286,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 403,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 806,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1209,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1612,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 2015,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2418,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2821,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

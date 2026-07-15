@@ -1,0 +1,63 @@
+{
+  "image": "current-eel-move-sheet.png",
+  "frameWidth": 376,
+  "frameHeight": 271,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 376,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 752,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1128,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1504,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1880,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2256,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2632,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "ice",
+  "slug": "frostglass-tundra",
+  "concept": "icy tundra with frozen lake, snow paths and crystal caves",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

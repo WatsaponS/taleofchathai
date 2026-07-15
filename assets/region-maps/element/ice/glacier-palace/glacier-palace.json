@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "ice",
+  "slug": "glacier-palace",
+  "concept": "blue ice palace terraces, slippery bridges and aurora courtyard",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

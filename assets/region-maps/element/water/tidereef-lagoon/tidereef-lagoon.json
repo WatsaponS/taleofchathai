@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "water",
+  "slug": "tidereef-lagoon",
+  "concept": "tropical reef lagoon with sandbars, coral passages and tidal pools",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

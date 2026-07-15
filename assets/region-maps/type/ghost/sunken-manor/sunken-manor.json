@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "ghost",
+  "slug": "sunken-manor",
+  "concept": "abandoned spectral manor and flooded garden maze with secret rooms",
+  "width": 836,
+  "height": 941,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

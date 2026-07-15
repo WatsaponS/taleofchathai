@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "steel",
+  "slug": "ironworks-citadel",
+  "concept": "industrial steel fortress with furnaces, rails and assembly courtyards",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

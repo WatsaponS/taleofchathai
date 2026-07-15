@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "grass",
+  "slug": "ancient-garden",
+  "concept": "overgrown temple garden with hedge paths, seed shrine and waterfalls",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

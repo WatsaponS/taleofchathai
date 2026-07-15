@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "steel",
+  "slug": "magnetite-mine",
+  "concept": "metallic crystal mine with minecart tracks, cranes and magnetic gates",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

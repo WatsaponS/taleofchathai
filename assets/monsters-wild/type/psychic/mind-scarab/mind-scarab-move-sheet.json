@@ -1,0 +1,63 @@
+{
+  "image": "mind-scarab-move-sheet.png",
+  "frameWidth": 302,
+  "frameHeight": 313,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 302,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 604,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 906,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1208,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1510,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1812,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2114,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

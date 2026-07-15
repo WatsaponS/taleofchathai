@@ -1,0 +1,63 @@
+{
+  "image": "stripe-ferret-move-sheet.png",
+  "frameWidth": 334,
+  "frameHeight": 244,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 334,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 668,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1002,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1336,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1670,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2004,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2338,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

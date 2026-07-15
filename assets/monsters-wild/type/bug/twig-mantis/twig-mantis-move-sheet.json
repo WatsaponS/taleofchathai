@@ -1,0 +1,63 @@
+{
+  "image": "twig-mantis-move-sheet.png",
+  "frameWidth": 280,
+  "frameHeight": 266,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 280,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 560,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 840,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1120,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1400,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1680,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 1960,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "fairy",
+  "slug": "prism-mushroom-grove",
+  "concept": "enchanted pastel mushroom forest with crystal clearings and spiral paths",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

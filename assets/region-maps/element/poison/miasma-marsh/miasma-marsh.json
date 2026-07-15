@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "poison",
+  "slug": "miasma-marsh",
+  "concept": "purple toxic marsh with safe boardwalks, bubbling pools and fungus islands",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

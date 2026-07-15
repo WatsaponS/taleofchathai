@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "fairy",
+  "slug": "moonpetal-glen",
+  "concept": "moonlit flower glen with glowing ponds and petal bridges",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

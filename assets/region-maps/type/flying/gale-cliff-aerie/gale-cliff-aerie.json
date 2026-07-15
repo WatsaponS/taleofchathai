@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "flying",
+  "slug": "gale-cliff-aerie",
+  "concept": "high coastal cliffs with giant nests, rope bridges and updraft circles",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

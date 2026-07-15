@@ -1,0 +1,63 @@
+{
+  "image": "mask-kit-move-sheet.png",
+  "frameWidth": 281,
+  "frameHeight": 276,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 281,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 562,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 843,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1124,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1405,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1686,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 1967,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "electric",
+  "slug": "thunder-grid",
+  "concept": "storm power station with pylons, cable bridges and charged platforms",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

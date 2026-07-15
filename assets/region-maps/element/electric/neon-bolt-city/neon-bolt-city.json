@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "electric",
+  "slug": "neon-bolt-city",
+  "concept": "bright electric city district with neon roads, arcade plaza and substations",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

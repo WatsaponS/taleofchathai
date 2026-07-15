@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "fire",
+  "slug": "cinderstep-village",
+  "concept": "ashland village around fire shrine, hot springs and ember fields",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "fighting",
+  "slug": "champion-colosseum",
+  "concept": "stone combat colosseum district with ring, barracks and spectator paths",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

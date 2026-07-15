@@ -1,0 +1,63 @@
+{
+  "image": "clay-boar-move-sheet.png",
+  "frameWidth": 322,
+  "frameHeight": 345,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 322,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 644,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 966,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1288,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1610,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1932,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2254,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

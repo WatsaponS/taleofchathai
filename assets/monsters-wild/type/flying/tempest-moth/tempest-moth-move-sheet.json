@@ -1,0 +1,63 @@
+{
+  "image": "tempest-moth-move-sheet.png",
+  "frameWidth": 345,
+  "frameHeight": 295,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 345,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 690,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1035,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1380,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1725,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2070,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2415,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

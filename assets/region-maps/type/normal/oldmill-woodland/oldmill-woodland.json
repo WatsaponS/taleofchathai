@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "normal",
+  "slug": "oldmill-woodland",
+  "concept": "temperate woodland around an old mill, creek bridges and picnic clearings",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

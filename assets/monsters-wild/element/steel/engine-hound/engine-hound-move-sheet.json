@@ -1,0 +1,63 @@
+{
+  "image": "engine-hound-move-sheet.png",
+  "frameWidth": 414,
+  "frameHeight": 288,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 414,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 828,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1242,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1656,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 2070,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2484,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2898,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

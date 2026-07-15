@@ -1,0 +1,63 @@
+{
+  "image": "plague-rat-move-sheet.png",
+  "frameWidth": 450,
+  "frameHeight": 267,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 450,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 900,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1350,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1800,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 2250,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2700,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 3150,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

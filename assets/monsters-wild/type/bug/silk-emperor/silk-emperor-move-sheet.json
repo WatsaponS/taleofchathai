@@ -1,0 +1,63 @@
+{
+  "image": "silk-emperor-move-sheet.png",
+  "frameWidth": 363,
+  "frameHeight": 247,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 363,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 726,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1089,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1452,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1815,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2178,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2541,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

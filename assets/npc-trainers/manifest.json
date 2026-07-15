@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "slug": "trail-scout",
+    "name": "Trail Scout",
+    "image": "trail-scout/trail-scout.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 2,
+    "slug": "bug-researcher",
+    "name": "Bug Researcher",
+    "image": "bug-researcher/bug-researcher.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 3,
+    "slug": "martial-student",
+    "name": "Martial Arts Student",
+    "image": "martial-student/martial-student.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 4,
+    "slug": "flower-gardener",
+    "name": "Flower Gardener",
+    "image": "flower-gardener/flower-gardener.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 5,
+    "slug": "harbor-fisher",
+    "name": "Harbor Fisher",
+    "image": "harbor-fisher/harbor-fisher.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 6,
+    "slug": "young-inventor",
+    "name": "Young Inventor",
+    "image": "young-inventor/young-inventor.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 7,
+    "slug": "mountain-hiker",
+    "name": "Mountain Hiker",
+    "image": "mountain-hiker/mountain-hiker.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 8,
+    "slug": "street-dancer",
+    "name": "Street Dancer",
+    "image": "street-dancer/street-dancer.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 9,
+    "slug": "school-prefect",
+    "name": "School Prefect",
+    "image": "school-prefect/school-prefect.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 10,
+    "slug": "cafe-courier",
+    "name": "Cafe Courier",
+    "image": "cafe-courier/cafe-courier.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 11,
+    "slug": "ruin-archaeologist",
+    "name": "Ruin Archaeologist",
+    "image": "ruin-archaeologist/ruin-archaeologist.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 12,
+    "slug": "ghost-storyteller",
+    "name": "Ghost Storyteller",
+    "image": "ghost-storyteller/ghost-storyteller.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 13,
+    "slug": "snow-ranger",
+    "name": "Snow Ranger",
+    "image": "snow-ranger/snow-ranger.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 14,
+    "slug": "fire-smith",
+    "name": "Fire Smith",
+    "image": "fire-smith/fire-smith.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 15,
+    "slug": "electric-technician",
+    "name": "Electric Technician",
+    "image": "electric-technician/electric-technician.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 16,
+    "slug": "desert-nomad",
+    "name": "Desert Nomad",
+    "image": "desert-nomad/desert-nomad.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 17,
+    "slug": "forest-herbalist",
+    "name": "Forest Herbalist",
+    "image": "forest-herbalist/forest-herbalist.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 18,
+    "slug": "punk-drummer",
+    "name": "Punk Drummer",
+    "image": "punk-drummer/punk-drummer.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 19,
+    "slug": "bird-keeper",
+    "name": "Bird Keeper",
+    "image": "bird-keeper/bird-keeper.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 20,
+    "slug": "canal-sailor",
+    "name": "Canal Sailor",
+    "image": "canal-sailor/canal-sailor.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 21,
+    "slug": "psychic-magician",
+    "name": "Psychic Stage Magician",
+    "image": "psychic-magician/psychic-magician.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 22,
+    "slug": "quarry-foreman",
+    "name": "Quarry Foreman",
+    "image": "quarry-foreman/quarry-foreman.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 23,
+    "slug": "poison-alchemist",
+    "name": "Poison Alchemist",
+    "image": "poison-alchemist/poison-alchemist.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 24,
+    "slug": "steel-officer",
+    "name": "Steel Security Officer",
+    "image": "steel-officer/steel-officer.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 25,
+    "slug": "dragon-guardian",
+    "name": "Dragon Shrine Guardian",
+    "image": "dragon-guardian/dragon-guardian.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 26,
+    "slug": "fairy-performer",
+    "name": "Fairy Festival Performer",
+    "image": "fairy-performer/fairy-performer.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 27,
+    "slug": "veteran-champion",
+    "name": "Veteran Champion",
+    "image": "veteran-champion/veteran-champion.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 28,
+    "slug": "elder-naturalist",
+    "name": "Elder Naturalist",
+    "image": "elder-naturalist/elder-naturalist.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 29,
+    "slug": "night-courier",
+    "name": "Night Courier",
+    "image": "night-courier/night-courier.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  },
+  {
+    "id": 30,
+    "slug": "traveling-chef",
+    "name": "Traveling Chef",
+    "image": "traveling-chef/traveling-chef.png",
+    "role": "challenge-trainer",
+    "battle_pose": "three-quarter-front",
+    "status": "complete"
+  }
+]

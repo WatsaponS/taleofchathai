@@ -1,0 +1,63 @@
+{
+  "image": "bastion-tortoise-move-sheet.png",
+  "frameWidth": 323,
+  "frameHeight": 241,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 323,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 646,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 969,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1292,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1615,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1938,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2261,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

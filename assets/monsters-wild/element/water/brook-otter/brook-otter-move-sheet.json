@@ -1,0 +1,63 @@
+{
+  "image": "brook-otter-move-sheet.png",
+  "frameWidth": 392,
+  "frameHeight": 227,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 392,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 784,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1176,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1568,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1960,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2352,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2744,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

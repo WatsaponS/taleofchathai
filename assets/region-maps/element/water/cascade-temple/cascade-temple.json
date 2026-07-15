@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "water",
+  "slug": "cascade-temple",
+  "concept": "waterfall temple with canals, bridges and stepped pools",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

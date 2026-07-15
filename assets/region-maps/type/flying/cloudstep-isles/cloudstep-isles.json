@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "flying",
+  "slug": "cloudstep-isles",
+  "concept": "floating islands linked by wind bridges, nests and air-current lanes",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

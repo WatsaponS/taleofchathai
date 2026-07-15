@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "dark",
+  "slug": "umbra-forest",
+  "concept": "black-purple forest with crescent clearings, ruins and shadow pools",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

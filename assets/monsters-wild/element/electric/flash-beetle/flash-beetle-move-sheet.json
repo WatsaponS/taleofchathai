@@ -1,0 +1,63 @@
+{
+  "image": "flash-beetle-move-sheet.png",
+  "frameWidth": 276,
+  "frameHeight": 217,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 276,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 552,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 828,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1104,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1380,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1656,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 1932,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

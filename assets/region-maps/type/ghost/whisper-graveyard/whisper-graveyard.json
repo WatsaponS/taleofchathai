@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "ghost",
+  "slug": "whisper-graveyard",
+  "concept": "haunted graveyard with ruined chapel, crypt paths and blue wisps",
+  "width": 836,
+  "height": 941,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

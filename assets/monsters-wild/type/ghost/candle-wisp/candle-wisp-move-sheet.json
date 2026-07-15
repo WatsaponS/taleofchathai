@@ -1,0 +1,63 @@
+{
+  "image": "candle-wisp-move-sheet.png",
+  "frameWidth": 241,
+  "frameHeight": 305,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 241,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 482,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 723,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 964,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1205,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1446,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 1687,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

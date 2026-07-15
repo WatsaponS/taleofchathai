@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "dragon",
+  "slug": "wyrmstone-highlands",
+  "concept": "mountain dragon sanctuary with winding cliff road, nests and ancient rib bones",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

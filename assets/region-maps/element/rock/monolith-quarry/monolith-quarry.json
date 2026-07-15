@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "rock",
+  "slug": "monolith-quarry",
+  "concept": "ancient stone quarry with cranes, block maze and carved monoliths",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

@@ -1,0 +1,63 @@
+{
+  "image": "shrine-apparition-move-sheet.png",
+  "frameWidth": 337,
+  "frameHeight": 345,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 337,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 674,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1011,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1348,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1685,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2022,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2359,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

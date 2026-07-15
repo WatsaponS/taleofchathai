@@ -1,0 +1,10 @@
+{
+  "group": "element",
+  "category": "fire",
+  "slug": "emberpeak-forge",
+  "concept": "lava mountain forge with basalt bridges and smithing platforms",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

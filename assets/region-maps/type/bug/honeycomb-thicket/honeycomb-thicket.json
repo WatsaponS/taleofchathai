@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "bug",
+  "slug": "honeycomb-thicket",
+  "concept": "giant flower thicket with honeycomb hive chambers and pollen trails",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "group": "type",
+    "category": "dragon",
+    "index": 1,
+    "slug": "wyrmstone-highlands",
+    "concept": "mountain dragon sanctuary with winding cliff road, nests and ancient rib bones",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "dragon",
+    "index": 2,
+    "slug": "skyfang-caldera",
+    "concept": "volcanic caldera dragon roost with bridges, caves and circular arena",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "fighting",
+    "index": 1,
+    "slug": "dojo-valley",
+    "concept": "outdoor martial arts dojo valley with training courts and bamboo routes",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "fighting",
+    "index": 2,
+    "slug": "champion-colosseum",
+    "concept": "stone combat colosseum district with ring, barracks and spectator paths",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "fairy",
+    "index": 1,
+    "slug": "moonpetal-glen",
+    "concept": "moonlit flower glen with glowing ponds and petal bridges",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "fairy",
+    "index": 2,
+    "slug": "prism-mushroom-grove",
+    "concept": "enchanted pastel mushroom forest with crystal clearings and spiral paths",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "ghost",
+    "index": 1,
+    "slug": "whisper-graveyard",
+    "concept": "haunted graveyard with ruined chapel, crypt paths and blue wisps",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "ghost",
+    "index": 2,
+    "slug": "sunken-manor",
+    "concept": "abandoned spectral manor and flooded garden maze with secret rooms",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "flying",
+    "index": 1,
+    "slug": "cloudstep-isles",
+    "concept": "floating islands linked by wind bridges, nests and air-current lanes",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "flying",
+    "index": 2,
+    "slug": "gale-cliff-aerie",
+    "concept": "high coastal cliffs with giant nests, rope bridges and updraft circles",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "ground",
+    "index": 1,
+    "slug": "dustroot-canyon",
+    "concept": "layered desert canyon with burrows, fossils and switchback trails",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "ground",
+    "index": 2,
+    "slug": "terracotta-badlands",
+    "concept": "red clay badlands village with mesas, dry river and tunnels",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "psychic",
+    "index": 1,
+    "slug": "dreamglass-sanctum",
+    "concept": "violet dream temple with mirrored pools, floating runes and maze paths",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "psychic",
+    "index": 2,
+    "slug": "mindwave-observatory",
+    "concept": "cosmic observatory island with concentric platforms and star portals",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "normal",
+    "index": 1,
+    "slug": "meadowcross-village",
+    "concept": "cozy green village, farms, pond and branching country roads",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "normal",
+    "index": 2,
+    "slug": "oldmill-woodland",
+    "concept": "temperate woodland around an old mill, creek bridges and picnic clearings",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "bug",
+    "index": 1,
+    "slug": "honeycomb-thicket",
+    "concept": "giant flower thicket with honeycomb hive chambers and pollen trails",
+    "status": "complete"
+  },
+  {
+    "group": "type",
+    "category": "bug",
+    "index": 2,
+    "slug": "silkroot-hollow",
+    "concept": "underground root hollow with silk bridges, cocoons and beetle tunnels",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "steel",
+    "index": 1,
+    "slug": "ironworks-citadel",
+    "concept": "industrial steel fortress with furnaces, rails and assembly courtyards",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "steel",
+    "index": 2,
+    "slug": "magnetite-mine",
+    "concept": "metallic crystal mine with minecart tracks, cranes and magnetic gates",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "dark",
+    "index": 1,
+    "slug": "eclipse-alley",
+    "concept": "noir moonlit city alleys with rooftops, lanterns and hidden courtyards",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "dark",
+    "index": 2,
+    "slug": "umbra-forest",
+    "concept": "black-purple forest with crescent clearings, ruins and shadow pools",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "electric",
+    "index": 1,
+    "slug": "thunder-grid",
+    "concept": "storm power station with pylons, cable bridges and charged platforms",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "electric",
+    "index": 2,
+    "slug": "neon-bolt-city",
+    "concept": "bright electric city district with neon roads, arcade plaza and substations",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "fire",
+    "index": 1,
+    "slug": "emberpeak-forge",
+    "concept": "lava mountain forge with basalt bridges and smithing platforms",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "fire",
+    "index": 2,
+    "slug": "cinderstep-village",
+    "concept": "ashland village around fire shrine, hot springs and ember fields",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "ice",
+    "index": 1,
+    "slug": "frostglass-tundra",
+    "concept": "icy tundra with frozen lake, snow paths and crystal caves",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "ice",
+    "index": 2,
+    "slug": "glacier-palace",
+    "concept": "blue ice palace terraces, slippery bridges and aurora courtyard",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "grass",
+    "index": 1,
+    "slug": "verdant-canopy",
+    "concept": "lush jungle canopy with vine bridges, ruins and giant leaves",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "grass",
+    "index": 2,
+    "slug": "ancient-garden",
+    "concept": "overgrown temple garden with hedge paths, seed shrine and waterfalls",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "poison",
+    "index": 1,
+    "slug": "miasma-marsh",
+    "concept": "purple toxic marsh with safe boardwalks, bubbling pools and fungus islands",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "poison",
+    "index": 2,
+    "slug": "sporelab-ruins",
+    "concept": "abandoned alchemy greenhouse with poisonous vines, vats and broken rooms",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "water",
+    "index": 1,
+    "slug": "tidereef-lagoon",
+    "concept": "tropical reef lagoon with sandbars, coral passages and tidal pools",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "water",
+    "index": 2,
+    "slug": "cascade-temple",
+    "concept": "waterfall temple with canals, bridges and stepped pools",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "rock",
+    "index": 1,
+    "slug": "monolith-quarry",
+    "concept": "ancient stone quarry with cranes, block maze and carved monoliths",
+    "status": "complete"
+  },
+  {
+    "group": "element",
+    "category": "rock",
+    "index": 2,
+    "slug": "crystal-cavern",
+    "concept": "earth-tone crystal cavern with bridges, mine paths and geode chambers",
+    "status": "complete"
+  }
+]

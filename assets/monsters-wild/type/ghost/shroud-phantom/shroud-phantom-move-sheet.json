@@ -1,0 +1,63 @@
+{
+  "image": "shroud-phantom-move-sheet.png",
+  "frameWidth": 320,
+  "frameHeight": 345,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 320,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 640,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 960,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1280,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1600,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 1920,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2240,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

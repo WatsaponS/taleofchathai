@@ -1,0 +1,63 @@
+{
+  "image": "chip-gecko-move-sheet.png",
+  "frameWidth": 368,
+  "frameHeight": 224,
+  "frames": [
+    {
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 1,
+      "x": 368,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 2,
+      "x": 736,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 3,
+      "x": 1104,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 4,
+      "x": 1472,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 5,
+      "x": 1840,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 6,
+      "x": 2208,
+      "y": 0,
+      "duration": 120
+    },
+    {
+      "index": 7,
+      "x": 2576,
+      "y": 0,
+      "duration": 120
+    }
+  ],
+  "tags": [
+    {
+      "name": "move",
+      "from": 0,
+      "to": 7,
+      "direction": "forward"
+    }
+  ]
+}

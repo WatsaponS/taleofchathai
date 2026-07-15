@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "ground",
+  "slug": "dustroot-canyon",
+  "concept": "layered desert canyon with burrows, fossils and switchback trails",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}

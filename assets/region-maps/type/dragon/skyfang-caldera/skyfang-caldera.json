@@ -1,0 +1,10 @@
+{
+  "group": "type",
+  "category": "dragon",
+  "slug": "skyfang-caldera",
+  "concept": "volcanic caldera dragon roost with bridges, caves and circular arena",
+  "width": 768,
+  "height": 1024,
+  "view": "top-down",
+  "tile_visual_scale": 32
+}
