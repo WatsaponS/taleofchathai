@@ -54,6 +54,7 @@ function render() {
   const bgmKey = bgmContextKey();
   if (bgmKey) playBgm(bgmKey); else stopBgm();
   if (state.screen === 'field') applyFieldScale();
+  if (state.screen === 'battle') alignBattleSprites();
 }
 
 function renderTopbar() {

@@ -270,13 +270,14 @@ button.big { padding: 12px 22px; font-size: 16px; display: block; margin: 10px a
   background: radial-gradient(ellipse at center, rgba(0,0,0,.6) 0%, rgba(0,0,0,.45) 55%, rgba(0,0,0,.15) 82%, rgba(0,0,0,0) 100%);
   box-shadow: 0 0 0 1px rgba(255,255,255,.22);
 }
-.battle-enemy-platform { top: 150px; right: 55px; }
-.battle-player-platform { bottom: 10px; left: 55px; }
+.battle-enemy-platform { top: 135px; right: 35px; }
+.battle-player-platform { bottom: 10px; left: 35px; }
 /* Enemy (top-right) and player (bottom-left) mirror each other exactly — same box size, same
    edge offsets — so the two sides read as a balanced face-off instead of the enemy looking like
-   it lunged forward. */
+   it lunged forward. Pulled in closer to the corners per playtest feedback (used to sit too far
+   toward the middle of the field). */
 .battle-enemy-sprite {
-  position: absolute; top: 24px; right: 40px;
+  position: absolute; top: 12px; right: 20px;
   width: 140px; height: 140px;
   display: flex; align-items: flex-end; justify-content: center;
   /* bobY2 (translateY only) — NOT bobY, which bakes in a translateX(-50%) meant for the
@@ -285,7 +286,7 @@ button.big { padding: 12px 22px; font-size: 16px; display: block; margin: 10px a
   animation: bobY2 2.2s ease-in-out infinite;
 }
 .battle-player-sprite {
-  position: absolute; bottom: 24px; left: 40px;
+  position: absolute; bottom: 12px; left: 20px;
   width: 140px; height: 140px;
   display: flex; align-items: flex-end; justify-content: center;
   animation: bobY2 2.4s ease-in-out infinite; animation-delay: -.6s; /* offset so it's not synced with the enemy's bob */

@@ -118,6 +118,85 @@ function spawnMiss(spriteEl) {
   setTimeout(() => m.remove(), 700);
 }
 
+// Monster art canvases aren't trimmed consistently — different poses leave different amounts of
+// transparent padding around the character, so anchoring purely by CSS box (bottom-center) doesn't
+// reliably land the visible character on top of its shadow ellipse (playtest feedback: sprite drifts
+// away from its own shadow, varies per species/pose). Instead, read the actual pixel alpha of each
+// sprite to find where its "feet" (bottom-most opaque pixels) really are, and nudge the sprite by
+// that exact amount so the feet always land on the shadow platform's center, regardless of art padding.
+function spriteFeetPoint(img) {
+  const w = img.naturalWidth, h = img.naturalHeight;
+  if (!w || !h) return null;
+  const c = document.createElement('canvas');
+  c.width = w; c.height = h;
+  const ctx = c.getContext('2d');
+  ctx.drawImage(img, 0, 0);
+  let data;
+  try { data = ctx.getImageData(0, 0, w, h).data; } catch (e) { return null; }
+  let minY = h, maxY = -1;
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      if (data[(y * w + x) * 4 + 3] > 20) {
+        if (y < minY) minY = y;
+        if (y > maxY) maxY = y;
+        break;
+      }
+    }
+  }
+  if (maxY < 0) return null;
+  // Alpha-weighted X centroid over a band near the bottom (not just the single bottom-most row,
+  // which is too easily skewed by one stray tail/paw pixel) — a wider band better approximates
+  // where the character's stance is actually grounded.
+  const bandHeight = Math.max(4, Math.round((maxY - minY) * 0.12));
+  const bandTop = Math.max(0, maxY - bandHeight);
+  let sumX = 0, sumA = 0;
+  for (let y = bandTop; y <= maxY; y++) {
+    for (let x = 0; x < w; x++) {
+      const a = data[(y * w + x) * 4 + 3];
+      if (a > 20) { sumX += x * a; sumA += a; }
+    }
+  }
+  if (sumA <= 0) return null;
+  return { xFrac: (sumX / sumA) / w, yFrac: maxY / h };
+}
+
+function alignSpriteToShadow(spriteEl, imgEl, platformEl, mirrored) {
+  if (!spriteEl || !imgEl || !platformEl) return;
+  const doAlign = () => {
+    const feet = spriteFeetPoint(imgEl);
+    if (!feet) return;
+    const imgRect = imgEl.getBoundingClientRect();
+    const platRect = platformEl.getBoundingClientRect();
+    const xFrac = mirrored ? (1 - feet.xFrac) : feet.xFrac;
+    const feetPageX = imgRect.left + xFrac * imgRect.width;
+    const feetPageY = imgRect.top + feet.yFrac * imgRect.height;
+    const dx = (platRect.left + platRect.width / 2) - feetPageX;
+    const dy = (platRect.top + platRect.height / 2) - feetPageY;
+    // margin, not transform: the sprite already uses `transform` for its idle bob animation, and
+    // .mon-img uses `transform: scaleX(-1)` for the player's mirror — margin shifts position
+    // without fighting either of those.
+    spriteEl.style.marginLeft = dx + 'px';
+    spriteEl.style.marginTop = dy + 'px';
+  };
+  if (imgEl.complete && imgEl.naturalWidth) doAlign();
+  else imgEl.addEventListener('load', doAlign, { once: true });
+}
+
+function alignBattleSprites() {
+  const field = document.querySelector('.battle-field');
+  if (!field) return;
+  alignSpriteToShadow(
+    document.querySelector('.battle-enemy-sprite'),
+    document.querySelector('.battle-enemy-sprite .mon-img'),
+    document.querySelector('.battle-enemy-platform'),
+    false);
+  alignSpriteToShadow(
+    document.querySelector('.battle-player-sprite'),
+    document.querySelector('.battle-player-sprite .mon-img'),
+    document.querySelector('.battle-player-platform'),
+    true);
+}
+
 function battleSideEls(side) {
   const spriteEl = document.querySelector(side === 'player' ? '.battle-player-sprite' : '.battle-enemy-sprite');
   return {
