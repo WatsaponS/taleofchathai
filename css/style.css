@@ -1,18 +1,36 @@
 /* TaleofChaThai — pixel-art-first styling (adapted from ChaThaiTheCat's proven layout). */
 * { box-sizing: border-box; }
 
+html {
+  overflow-x: hidden; /* belt-and-suspenders: no element should ever cause horizontal scroll on mobile */
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
   min-height: 100vh;
+  min-height: 100dvh; /* on mobile, 100vh is measured against the max viewport (address bar hidden) —
+                         100dvh tracks the actual visible area as the address bar shows/hides, so
+                         content doesn't get cut off short or leave a jumpy gap at the bottom */
   background: radial-gradient(circle at top, #1d2b3a, #0b1220 70%);
   color: #eef4ff;
   font-family: 'Segoe UI', 'Baloo 2', sans-serif;
   display: flex;
   justify-content: center;
   padding: 16px;
+  /* Respect notches/home-indicator on edge-to-edge phones (viewport-fit=cover in index.html) so
+     the game area doesn't get obscured by the device's rounded corners/gesture bar. */
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+  padding-top: max(16px, env(safe-area-inset-top));
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+@media (max-width: 480px) {
+  /* Narrow phones in portrait: give the actual game more of the width instead of fixed 16px margins. */
+  body { padding-left: max(6px, env(safe-area-inset-left)); padding-right: max(6px, env(safe-area-inset-right)); }
 }
 
-#app { width: 100%; max-width: 780px; }
+#app { width: 100%; max-width: 780px; min-width: 0; }
 
 button {
   font-family: inherit;
