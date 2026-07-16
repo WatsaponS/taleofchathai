@@ -53,6 +53,7 @@ function render() {
   app.appendChild(wrap);
   const bgmKey = bgmContextKey();
   if (bgmKey) playBgm(bgmKey); else stopBgm();
+  if (state.screen === 'field') applyFieldScale();
 }
 
 function renderTopbar() {
@@ -249,10 +250,12 @@ function renderField() {
   <div class="screen field-screen">
     <div class="field-zonename">${map.name}</div>
     <div class="field-viewport">
-      <div class="field-map-layer" style="width:${mapW}px;height:${mapH}px;background-image:url('${map.bg}');transform:translate(${-cam.x}px,${-cam.y}px)">
-        ${tilesHTML}${warpsHTML}${npcsHTML}${playerHTML}
+      <div class="field-scale-wrap">
+        <div class="field-map-layer" style="width:${mapW}px;height:${mapH}px;background-image:url('${map.bg}');transform:translate(${-cam.x}px,${-cam.y}px)">
+          ${tilesHTML}${warpsHTML}${npcsHTML}${playerHTML}
+        </div>
+        ${dialogueHTML}
       </div>
-      ${dialogueHTML}
     </div>
     <div class="field-hint">Arrow keys / WASD or drag the stick — 8 directions, corners slide off walls. Grass &amp; crystal ground hide wild monsters — paths are safe. Bump into people (or bosses!) to interact. 🚪 leads back to the Region Map.</div>
     <div class="field-controls">

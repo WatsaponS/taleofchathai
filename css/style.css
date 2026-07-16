@@ -132,12 +132,20 @@ button.big { padding: 12px 22px; font-size: 16px; display: block; margin: 10px a
 .field-zonename { font-weight: 700; margin-bottom: 8px; }
 .field-viewport {
   position: relative;
-  width: 480px; height: 320px;
-  max-width: 100%;
+  width: 100%; max-width: 480px;
+  aspect-ratio: 480 / 320; /* height follows width so the box never squashes/stretches when scaled */
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
   border: 2px solid #2e4664;
+}
+/* The real fixed-resolution (480x320 = 15x10 tiles at TILE_PX=32) scene lives in here; JS measures
+   .field-viewport's actual rendered width and scales this wrapper to match (main.js applyFieldScale)
+   so narrow phone screens shrink the WHOLE scene uniformly instead of cropping its right/bottom edge. */
+.field-scale-wrap {
+  position: absolute; top: 0; left: 0;
+  width: 480px; height: 320px;
+  transform-origin: top left;
 }
 .field-map-layer {
   position: absolute; left: 0; top: 0;

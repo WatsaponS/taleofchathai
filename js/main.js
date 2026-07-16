@@ -201,6 +201,22 @@ function playBattleBeats(beats, playerMon, enemyMon, onDone) {
   next();
 }
 
+// The field viewport is a fixed 480x320 pixel-grid canvas (15x10 tiles at TILE_PX=32) — on a narrow
+// mobile screen, plain CSS max-width:100% would only SHRINK THE OUTER BOX while the inner map layer
+// (sized to the full map in real tile pixels, positioned via camera translate) keeps its full size
+// and just gets cropped by overflow:hidden. That crops the RIGHT/BOTTOM edge of the intended view
+// instead of scaling it down, which is what made the player sprite look shoved off-center on phones.
+// Fix: the actual 480x320 content lives in .field-scale-wrap, and we scale THAT down via a measured
+// transform so the whole scene shrinks uniformly instead of being cropped.
+function applyFieldScale() {
+  const vp = document.querySelector('.field-viewport');
+  const wrap = document.querySelector('.field-scale-wrap');
+  if (!vp || !wrap) return;
+  const scale = vp.clientWidth / 480;
+  wrap.style.transform = `scale(${scale})`;
+}
+window.addEventListener('resize', applyFieldScale);
+
 function performFieldMove(dx, dy) {
   if (state.screen !== 'field' || !state.field) return;
   if (fieldStepLock || uiState.animating) return;
